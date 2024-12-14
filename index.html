@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MascotaCare - Descargar APK</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f9f9f9;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+
+    #downloadButton {
+      display: none;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 15px 32px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 600px) {
+      img {
+        display: none;
+      }
+
+      #downloadButton {
+        display: inline-block;
+      }
+    }
+
+    /* Estilos para computadoras */
+    @media only screen and (min-width: 601px) {
+      img {
+        display: inline-block;
+      }
+
+      #downloadButton {
+        display: none;
+      }
+    }
+  </style>
+</head>
 <body>
-    <h1>MascotaCare</h1>
-    <p>¡Descarga la app y cuida a tu mascota como se merece!</p>
+  <h1>MascotaCare</h1>
+  <p>¡Descarga la app y cuida a tu mascota como se merece!</p>
 
-    <img id="qrCode" src="ruta/a/tu/codigo-qr.png" alt="Código QR para descargar MascotaCare">
+  <!-- Imagen del código QR -->
+  <img src="img/QRMascotaCare.png" alt="Descargar MascotaCare APK">
 
-    <button id="downloadButton">Descargar MascotaCare APK</button>
-
-    <script>
-        // ... (código JavaScript del ejemplo anterior)
-    </script>
+  <!-- Botón de descarga para dispositivos móviles -->
+  <a id="downloadButton" href="https://drive.google.com/uc?export=download&id=1q6B4RbjqV4XosmbHHablwLujPrfsgJR9">
+    Descargar MascotaCare APK
+  </a>
 </body>
 </html>
