@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #e09028;
+}
+
+/* Estilo general */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+#Qr {
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+#logo {
+  width: 100%; 
+  max-width: 350px; 
+  height: auto; 
+  margin: 0 auto 20px; 
+}
+
+#mockup {
+  width: 100%; 
+  max-width: 800px; 
+  height: auto; 
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+
+#downloadButton {
+  display: none;
+  background-color: #e2d02ce1; /* Color de fondo normal */
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra normal */
+  transition: all 0.3s ease; 
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #logo {
+    width: 80%; 
+    margin-bottom: 15px;
+  }
+
+  #mockup {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .features img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #Qr {
+    display: none; 
+  }
+
+  #downloadButton {
+    display: inline-block;
+    background-color: #7e1dcee1; /* Color de fondo normal */
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold;
+    padding: 15px 40px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra normal */
+    transition: all 0.3s ease; 
+  }
+  
+  /* Interacciones */
+  #downloadButton:hover {
+    background-color: #2e3cbee7; /* Cambia el color al pasar el cursor */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3), /* Sombra más intensa */
+                0 0 20px rgba(255, 255, 255, 0.8); /* Resplandor blanco */ 
+    transform: translateY(-2px); 
+  }
+  
+  #downloadButton:active {
+    background-color: #3092d3; /* Color más oscuro al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
+    transform: translateY(0); 
+  }
+  
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 601px) {
+  body {
+    padding: 50px;
+  }
+
+  #logo {
+    width: 300px;
+  }
+
+  #mockup {
+    width: 800px;
+  }
+
+  .features img {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+
+  #Qr {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #downloadButton {
+    display: none;
+  }
+}
